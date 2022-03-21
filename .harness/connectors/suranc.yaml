@@ -1,0 +1,23 @@
+connector:
+  name: suranc
+  identifier: suranc
+  description:
+  orgIdentifier: default
+  projectIdentifier: suranbootcamp
+  type: Github
+  spec:
+    url: https://github.com/suranc/
+    validationRepo: harness-git-exp-demo
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: suranc
+          tokenRef: surancpat
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: surancpat
+    executeOnDelegate: false
+    type: Account
