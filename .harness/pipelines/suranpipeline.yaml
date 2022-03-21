@@ -7,7 +7,7 @@ pipeline:
     tags: {}
     stages:
         - stage:
-              name: suran-deploy-stage
+              name: suran-deploy-stage2
               identifier: surandeploystage
               description: ""
               type: Deployment
